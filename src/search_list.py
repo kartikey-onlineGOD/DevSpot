@@ -18,8 +18,3 @@ def search_devpost(keywords):
 
 
 
-    
-
-keywords = "HackAnalyzer"
-html_content = search_devpost(keywords)
-print(html_content)
