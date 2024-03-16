@@ -1,15 +1,16 @@
 
-
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
+
 from openai import OpenAI
 import re
-client = OpenAI()
-
+openai_api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=openai_api_key)
 def check(prompt):
     completion = client.chat.completions.create(
-    model="gpt-4",
+    model="gpt-3.5-turbo-0125",
     messages=[
         {"role": "system", "content": "You are a Hackathon Judge that can read the description that I give you and give me a list of keywords that would be useful to find other super similar projects, so no common AI words, super specific stuff."},
         {"role": "user", "content": prompt}
