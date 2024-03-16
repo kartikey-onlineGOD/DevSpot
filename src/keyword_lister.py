@@ -1,9 +1,11 @@
 
-api_key = '<API-KEY>'
+
+from dotenv import load_dotenv
+load_dotenv()
 
 from openai import OpenAI
 import re
-client = OpenAI(api_key=api_key)
+client = OpenAI()
 
 def check(prompt):
     completion = client.chat.completions.create(

@@ -1,9 +1,9 @@
 
-api_key = ''
+from dotenv import load_dotenv
+load_dotenv()
 
 from openai import OpenAI
-import re
-client = OpenAI(api_key=api_key)
+client = OpenAI()
 
 def check_similarity(prompt):
     completion = client.chat.completions.create(

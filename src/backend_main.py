@@ -14,7 +14,7 @@ for key in Keyword_list_main_project:
     urls += sl.search_devpost(key)
     urls = list(set(urls))
 
-    
+print(urls)    
 
 
 
