@@ -23,6 +23,3 @@ def check(prompt):
     return keywords_list
 
 
-
-
-

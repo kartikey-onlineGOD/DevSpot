@@ -32,8 +32,3 @@ def scrape_devpost(link):
     else:
         print("Failed to retrieve data. Status code:", response.status_code)
         return None
-
-# Example usage:
-devpost_link = "https://devpost.com/software/hackanalyzer"
-projects_data = scrape_devpost(devpost_link)
-print(projects_data)
