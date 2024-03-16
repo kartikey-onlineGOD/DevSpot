@@ -1,5 +1,5 @@
 
-api_key = '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'
+api_key = '<API-KEY>'
 
 from openai import OpenAI
 import re
