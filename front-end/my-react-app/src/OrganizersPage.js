@@ -5,10 +5,11 @@ function OrganizersPage() {
     const [projectLink, setProjectLink] = useState('');
     const [similarProjects, setSimilarProjects] = useState([]);
 
+
+
     const handleSubmit = async(e) => {
         e.preventDefault(); // Prevents the default form submission behavior
         try {
-            // Assuming your backend endpoint for processing the project link is '/find-similar'
             const response = await fetch('http://localhost:5000/find-similar', {
                 method: 'POST',
                 headers: {
@@ -33,10 +34,9 @@ function OrganizersPage() {
         <
         h1 className = "page-title" > For Organizers < /h1>
 
-        { /* Table for displaying similar projects */ } {
+        {
             similarProjects.length > 0 && ( <
-                div className = "table-container" >
-                <
+                div className = "table-scroll-container" > { /* Scrollable container */ } <
                 table className = "table" >
                 <
                 thead >
@@ -67,7 +67,7 @@ function OrganizersPage() {
             )
         }
 
-        { /* Chat input bar at the bottom */ } <
+        <
         form onSubmit = { handleSubmit }
         className = "chat-input-container" >
         <

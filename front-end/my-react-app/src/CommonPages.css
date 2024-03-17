@@ -97,26 +97,17 @@
     /* White text for the table */
 }
 
-
-/* CommonPages.css */
-
-
-/* Add or update this style */
-
-.table-scroll-container {
-    max-height: 400px;
-    /* Adjust based on your needs */
-    overflow-y: auto;
-    /* Enables vertical scrolling */
-    margin: 20px 0;
-    /* Optional: adds some space around the table for aesthetics */
-    -webkit-overflow-scrolling: touch;
-    /* Smooth scrolling on touch devices */
-}
-
 .table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.table-scroll-container {
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    max-height: 400px;
+    /* Or whatever height you prefer */
+    margin: 20px 0;
 }
 
 .table th,
@@ -164,4 +155,89 @@
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.table-scroll-container {
+    max-height: 400px;
+    /* Adjust based on your needs */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    border: 1px solid #ccc;
+    /* Optional: adds a border around the scrollable container */
+    margin-top: 20px;
+    /* Space above the table */
+}
+
+.results-table {
+    width: 100%;
+    /* Makes the table use the full width of its container */
+    border-collapse: collapse;
+    /* Optional: for styling */
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #ddd;
+    /* Optional: adds a border to each cell */
+    padding: 8px;
+    /* Padding inside each cell */
+    text-align: left;
+    /* Aligns text to the left */
+}
+
+.results-table th {
+    background-color: #f4f4f4;
+    /* Optional: background color for table headers */
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    /* Light grey */
+    border-top: 5px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
