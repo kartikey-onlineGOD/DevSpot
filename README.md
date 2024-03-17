@@ -18,23 +18,13 @@ Before you begin, ensure you have met the following requirements:
 - Python 3.8+ (for the Flask backend)
 - An OpenAI API key (for ChatGPT-4 integration)
 
-## 🛠 Installation & Setup
+## Installation & Setup
 
-1. Clone the repository:
+Follow these steps to get the project up and running on your local machine:
+
+### Clone the repository
+```bash
 git clone https://github.com/yourusername/DevSpot.git
-Frontend setup:
-bash
-Copy code
-cd DevSpot/frontend/my-react-app
-npm install
-npm start```
-Backend setup:
-bash
-Copy code
-cd DevSpot/backend
-pip install -r requirements.txt
-python app.py
-Add your OpenAI API key to your Flask app environment variables.
 
 ## 🚀 Usage
 After installation, visit http://localhost:3000 to access DevSpot's frontend. Use the platform to input your hackathon ideas, and let DevSpot assist you in evaluating their originality, finding resources, and comparing with existing projects.
