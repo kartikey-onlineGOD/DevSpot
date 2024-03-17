@@ -28,7 +28,7 @@ for i in urls:
         continue
     
     if sim_score >= 75:
-        Similar.append([i,sim_score]) 
+        Similar.append([pj_name,i,sim_score]) 
         
 
     count += 1
@@ -38,7 +38,7 @@ for i in urls:
 
 
 for i in Similar:
-    print(str(i[0]) + "\t" + str(i[1]) )
+    print(str(i[0]) + "\t" + str(i[1]) + "\t" + str(i[2]))
 
 
     

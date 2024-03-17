@@ -1,0 +1,49 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    /* Reduce the percentage if the navbar is too wide */
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* Ensure the navbar starts from the very left */
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    /* Adjust based on your theme */
+}
+
+.navbar-logo img {
+    height: 50px;
+    margin-right: 10px;
+    /* Reduce the right margin if needed */
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 20px;
+    /* Adjust the left margin to reduce space between navigation options */
+    text-decoration: none;
+    color: #fff;
+    /* Adjust based on your background color for visibility */
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* Adjust for hover effect */
+}

@@ -1,0 +1,84 @@
+/* CommonPages.css */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    height: 100vh;
+    /* Use viewport height to prevent scrolling */
+    margin: 0;
+    /* Reset any default margins */
+    padding: 0;
+    /* Adjust padding as necessary, but be mindful of overflow */
+    color: #333;
+    /* Adjust color as needed */
+    text-align: center;
+    background: url('Assets/background.png') no-repeat center center/cover;
+    /* Adjust path as necessary */
+    overflow: hidden;
+    /* Prevents scroll if content overflows */
+}
+
+.page-title {
+    position: absolute;
+    top: 80px;
+    /* Moves the title towards the top */
+    width: 100%;
+    /* Ensures the title is centered regardless of text length */
+    color: azure;
+}
+
+.page-input {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* Light grey border */
+    width: 100%;
+    max-width: 400px;
+    /* Ensures the input doesn't get too wide */
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 10px;
+    /* Adjust based on your design */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    /* Almost screen-wide */
+    max-width: 800px;
+    /* Prevents it from getting too wide on large screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-input {
+    width: 90%;
+    /* Allows space for the button */
+    padding: 10px;
+    border-radius: 20px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.chat-enter-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    /* Match your theme */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* Circular button */
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-enter-btn:hover {
+    background-color: #0056b3;
+}

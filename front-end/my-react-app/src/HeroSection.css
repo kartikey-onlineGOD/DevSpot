@@ -1,0 +1,78 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers the content vertically */
+    align-items: center;
+    height: 100vh;
+    background: url('Assets/background.png') no-repeat center center/cover;
+    color: white;
+    /* Ensures text is white */
+}
+
+.hero-top-content {
+    display: flex;
+    flex-direction: column;
+    /* Stacks items vertically */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Adds some space between this content and the main heading */
+}
+
+.hero-logo {
+    height: 100px;
+    /* Increase the logo size; adjust as necessary */
+    margin-bottom: 10px;
+    /* Space between logo and app name */
+}
+
+.app-name {
+    font-size: 2rem;
+    /* Increase the size of the app name if needed */
+    font-weight: bold;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    /* Adjust this as needed */
+    gap: 20px;
+    /* Creates space between flex items */
+    flex-wrap: wrap;
+    /* Wraps items to the next line if the container is too narrow */
+    text-align: center;
+    width: 100%;
+    /* Ensure the container takes up the full width */
+}
+
+.hero-heading {
+    font-size: 2rem;
+    /* Adjust the size of the main heading */
+    margin-bottom: 1rem;
+    width: 100%;
+    /* Ensure headings align with the flex layout */
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    /* Text alignment within the flex container */
+}
+
+.hero-btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* Removed margin-right to utilize gap in .hero-content for spacing */
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+}
