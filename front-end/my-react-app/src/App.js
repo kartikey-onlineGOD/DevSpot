@@ -24,10 +24,10 @@ function App() {
         /> <
         Route path = "/hackers"
         element = { < HackersPage / > }
-        /> <
-        /Routes> <
-        /div> <
-        /Router>
+        /> < /
+        Routes > <
+        /div> < /
+        Router >
     );
 }
 

@@ -82,3 +82,86 @@
 .chat-enter-btn:hover {
     background-color: #0056b3;
 }
+
+
+/* CommonPages.css - Add these styles for the table and chat bar */
+
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    /* Adjust based on your preference */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* Space above the chat bar */
+    color: white;
+    /* White text for the table */
+}
+
+
+/* CommonPages.css */
+
+
+/* Add or update this style */
+
+.table-scroll-container {
+    max-height: 400px;
+    /* Adjust based on your needs */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    margin: 20px 0;
+    /* Optional: adds some space around the table for aesthetics */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on touch devices */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    /* Light border for the cells */
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    /* Matching the button color for consistency */
+    color: white;
+}
+
+.chat-input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    /* Padding inside the chat bar */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    /* Ensures padding doesn't increase the size */
+}
+
+.chat-input {
+    width: calc(100% - 60px);
+    /* Leaves space for the button */
+    padding: 10px;
+    margin-right: 10px;
+    /* Space between the input and the button */
+}
+
+.chat-enter-btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    /* A greenish button, but choose your color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}

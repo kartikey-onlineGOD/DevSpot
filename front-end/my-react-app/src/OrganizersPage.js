@@ -31,22 +31,13 @@ function OrganizersPage() {
     return ( <
         div className = "page-container" >
         <
-        h1 className = "page-title" > For Organizers < /h1> <
-        form onSubmit = { handleSubmit }
-        className = "form-container" >
-        <
-        input type = "text"
-        className = "chat-input"
-        placeholder = "Paste the project link here..."
-        value = { projectLink }
-        onChange = {
-            (e) => setProjectLink(e.target.value) }
-        /> <
-        button type = "submit"
-        className = "chat-enter-btn" > { '>' } < /button> <
-        /form> {
+        h1 className = "page-title" > For Organizers < /h1>
+
+        { /* Table for displaying similar projects */ } {
             similarProjects.length > 0 && ( <
-                table >
+                div className = "table-container" >
+                <
+                table className = "table" >
                 <
                 thead >
                 <
@@ -54,8 +45,8 @@ function OrganizersPage() {
                 <
                 th > Project Name < /th> <
                 th > Link < /th> <
-                th > Similarity Score < /th> <
-                /tr> <
+                th > Similarity Score < /th> < /
+                tr > <
                 /thead> <
                 tbody > {
                     similarProjects.map((project, index) => ( <
@@ -66,14 +57,31 @@ function OrganizersPage() {
                         target = "_blank"
                         rel = "noopener noreferrer" > { project.link } < /a></td >
                         <
-                        td > { project.similarity } % < /td> <
-                        /tr>
+                        td > { project.similarity } % < /td> < /
+                        tr >
                     ))
                 } <
-                /tbody> <
-                /table>
+                /tbody> < /
+                table > <
+                /div>
             )
-        } <
+        }
+
+        { /* Chat input bar at the bottom */ } <
+        form onSubmit = { handleSubmit }
+        className = "chat-input-container" >
+        <
+        input type = "text"
+        className = "chat-input"
+        placeholder = "Paste the project link here..."
+        value = { projectLink }
+        onChange = {
+            (e) => setProjectLink(e.target.value)
+        }
+        /> <
+        button type = "submit"
+        className = "chat-enter-btn" > { '>' } < /button> < /
+        form > <
         /div>
     );
 }
