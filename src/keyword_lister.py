@@ -12,7 +12,15 @@ def check(prompt):
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo-0125",
     messages=[
-        {"role": "system", "content": "You are a Hackathon Judge that can read the description that I give you and give me a list of keywords that would be useful to find other super similar projects, so no common AI words, super specific stuff."},
+        {"role": "system", "content": '''Task: You are tasked with assisting as a Hackathon Judge by generating a list of keywords based on project descriptions. These keywords will help participants find similar projects while excluding specific technologies and implementation details. Your goal is to focus solely on the core concepts and ideas behind each project.
+
+Instructions:
+1.Read the project description thoroughly to understand the core concept and objectives.
+2.Identify key concepts, themes, and functionalities described in the project without focusing on specific technologies.
+3.Exclude technical terms such as programming languages, frameworks, libraries, and AI-specific terms like TensorFlow.
+4.Generate a numbered list of keywords based on the extracted non-technical terms and core concepts.
+5.Refine the keyword list to ensure it accurately represents the project idea and remove any irrelevant or overly technical terms.
+6.Present the final list of keywords in a numbered format for easy reference by participants.'''},
         {"role": "user", "content": prompt}
     ]
     )
@@ -24,5 +32,4 @@ def check(prompt):
 
 
     return keywords_list
-
 

@@ -4,7 +4,7 @@ from requests_html import HTMLSession
 
 def scrape_devpost(link):
     # Send a GET request to the provided link
-    print("Entered")
+    print("Entered Web Scraper")
     response = requests.get(link)
     print(response.status_code)
 
