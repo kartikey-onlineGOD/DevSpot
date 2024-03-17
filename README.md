@@ -23,8 +23,7 @@ Before you begin, ensure you have met the following requirements:
 Follow these steps to get the project up and running on your local machine:
 
 ### Clone the repository
-```bash
-git clone https://github.com/yourusername/DevSpot.git
+```bash git clone https://github.com/yourusername/DevSpot.git```
 
 ## 🚀 Usage
 After installation, visit http://localhost:3000 to access DevSpot's frontend. Use the platform to input your hackathon ideas, and let DevSpot assist you in evaluating their originality, finding resources, and comparing with existing projects.
